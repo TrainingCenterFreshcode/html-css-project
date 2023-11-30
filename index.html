@@ -6,7 +6,12 @@
     <title>Learn HTML & CSS</title>
 
     <style>
-      p { /* Селектор за типом тега */
+      h1, h2, h3 { /* Tag selector - 001 */
+        font-size: 100px;
+        background-color: aquamarine;
+      }
+
+      p { /* Селектор за типом тега - 001 */
         /* color: grey;  -- word */
         /* color: rgb(23, 123, 100);  -- rgb */
         /* color: rgba(100, 150, 27, 1);  -- rgb + alpha channel */
@@ -17,25 +22,28 @@
         font-size: 30px;
       }
 
-      #heading { /* Селектор за айді */
+      #heading { /* Селектор за айді - 100 */
         color: blueviolet;
         font-size: 50px;
       }
 
-      .green-text { /* Класовий селектор */
+      .green-text { /* Класовий селектор - 010 */
         color: green;
       }
 
-      .font-size-large {
-        font-size: 90px;
+      .pink-text {
+        color: pink;
       }
+      
+      /* inline style - 1000 */
     </style>
   </head>
   <body>
+    <h1 class="green-text pink-text">Heding</h1>
     <!-- ctrl + .   - швидке створення коментарів -->
-    <p>Lorem ipsum dolor sit, <span class="green-text">amet consectetur adipisicing elit. Quia,</span> voluptatum?</p>
+    <p style="color: red;">Lorem ipsum dolor sit, <span class="green-text">amet consectetur adipisicing elit. Quia,</span> voluptatum?</p>
     <article>
-      <h2 id="heading">Супер <span class="green-text font-size-large">мега</span> якийсь заголовок!</h2>
+      <h2 id="heading">Супер <span class="green-text">мега</span> якийсь заголовок!</h2>
     </article>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, voluptatum?</p>
   </body>
