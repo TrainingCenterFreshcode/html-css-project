@@ -1,0 +1,30 @@
+h1,
+h2,
+h3 {
+  /* Tag selector - 001 */
+  font-size: 100px;
+  background-color: aquamarine;
+}
+
+p {
+  /* Селектор за типом тега - 001 */
+  color: #efef42;
+  font-size: 30px;
+}
+
+#heading {
+  /* Селектор за айді - 100 */
+  color: blueviolet;
+  font-size: 50px;
+}
+
+.green-text {
+  /* Класовий селектор - 010 */
+  color: green;
+}
+
+.pink-text {
+  color: pink;
+}
+
+/* inline style - 1000 */
