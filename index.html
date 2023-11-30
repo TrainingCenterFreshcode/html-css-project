@@ -6,20 +6,37 @@
     <title>Learn HTML & CSS</title>
 
     <style>
-      p {
+      p { /* Селектор за типом тега */
         /* color: grey;  -- word */
         /* color: rgb(23, 123, 100);  -- rgb */
         /* color: rgba(100, 150, 27, 1);  -- rgb + alpha channel */
         /* hex-code */
-        color: #458025;
+        color: #efef42;
         /* font-size: 200pt;  -- typographic punkts */
         /* px */
         font-size: 30px;
+      }
+
+      #heading { /* Селектор за айді */
+        color: blueviolet;
+        font-size: 50px;
+      }
+
+      .green-text { /* Класовий селектор */
+        color: green;
+      }
+
+      .font-size-large {
+        font-size: 90px;
       }
     </style>
   </head>
   <body>
     <!-- ctrl + .   - швидке створення коментарів -->
+    <p>Lorem ipsum dolor sit, <span class="green-text">amet consectetur adipisicing elit. Quia,</span> voluptatum?</p>
+    <article>
+      <h2 id="heading">Супер <span class="green-text font-size-large">мега</span> якийсь заголовок!</h2>
+    </article>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, voluptatum?</p>
   </body>
 </html>
