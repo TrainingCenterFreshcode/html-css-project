@@ -6,10 +6,16 @@ h3 {
   background-color: aquamarine;
 }
 
+body {
+  font-size: 20px;
+}
+
 p {
   /* Селектор за типом тега - 001 */
-  color: #efef42;
-  font-size: 30px;
+  line-height: 2em;
+  /* text-align: center; */
+  /* text-align: justify;  -- по ширині */
+  /* text-align: right;  -- по правому краю */
 }
 
 #heading {
@@ -28,3 +34,29 @@ p {
 }
 
 /* inline style - 1000 */
+
+#btn-1 {
+  text-transform: uppercase;
+}
+
+#btn-2 {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* 
+
+font-size - розмір шрифту
+color - колір тексту
+background-color - колір заднього фону
+line-height - висота лінії
+text-transform - приведення до якогось певного регістру
+text-decoration - керування лініями під текстом (прибрати з посилання підкреслювання)
+font-weight - зробити текст жирним (bold)
+
+*/
