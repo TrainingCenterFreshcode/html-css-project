@@ -1,72 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap');
-
-@font-face {
-  font-family: 'Lilita One';
-  src: url('./fonts/LilitaOne-Regular.ttf');
-}
-
-h1,
-h2,
-h3 {
-  /* Tag selector - 001 */
-  font-size: 100px;
-  background-color: aquamarine;
-  font-family: 'Lilita One';
-}
-
 body {
-  font-size: 20px;
+  color: aquamarine;
 }
 
-p {
-  /* Селектор за типом тега - 001 */
-  line-height: 2em;
-  /* text-align: center; */
-  /* text-align: justify;  -- по ширині */
-  /* text-align: right;  -- по правому краю */
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-#heading {
-  /* Селектор за айді - 100 */
-  color: blueviolet;
-  font-size: 50px;
-}
-
-.green-text {
-  /* Класовий селектор - 010 */
+.main-article {
+  font-size: 60px;
   color: green;
+  border: 2px solid red;
 }
 
-.pink-text {
-  color: pink;
+/* Self rules is more important than inherited */
+
+.article-header {
+  color: rgb(241, 186, 113);
+  text-align: center;
 }
 
-/* inline style - 1000 */
-
-#btn-1 {
-  text-transform: uppercase;
-}
-
-#btn-2 {
-  text-transform: lowercase;
-}
-
-a {
+.article-link {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: inherit;
+}
+
+.article-content {
+  border: inherit;
 }
 
 /* 
-
-font-size - розмір шрифту
-color - колір тексту
-background-color - колір заднього фону
-line-height - висота лінії
-text-transform - приведення до якогось певного регістру
-text-decoration - керування лініями під текстом (прибрати з посилання підкреслювання)
-font-weight - зробити текст жирним (bold)
-font-family - обрати сімейство шрифтів
-
+border
+товщина тип_лінії колір
 */
