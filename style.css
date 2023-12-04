@@ -1,9 +1,9 @@
-.image {
+/* .image {
   width: 300px;
   border: 3px solid red;
   box-sizing: border-box;
   padding: 10px;
-}
+} */
 
 div {
   /* за замовчуванням, у div -, display - block */
@@ -12,4 +12,13 @@ div {
 
 span {
   display: block;
+}
+
+img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+
+  object-fit: cover;
+  /* object-position: -130px; */
 }
