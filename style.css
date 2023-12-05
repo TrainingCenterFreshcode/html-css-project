@@ -6,12 +6,3 @@ table {
 td, th {
   border: 1px solid black;
 }
-
-caption {
-  color: rgb(215, 95, 115);
-  font-weight: bold;
-}
-
-.text-center {
-  text-align: center;
-}
