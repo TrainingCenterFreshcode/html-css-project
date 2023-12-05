@@ -23,3 +23,7 @@ inline-block:
   background-color: dodgerblue;
   color: bisque;
 }
+
+.page-link:focus {
+  border: 5px solid green;
+}
