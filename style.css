@@ -27,3 +27,18 @@ inline-block:
 .page-link:focus {
   border: 5px solid green;
 }
+
+.page-link:active {
+  background-color: orange;
+  color: black;
+}
+
+input:focus {
+  background-color: aquamarine;
+}
+
+/* 
+hover - спрацьовує при наведенні на елемент мишею
+focus - спрацьовує при фокусі на елемент мишею або за допомогою клавіші "ТАБ"
+active - спрацьовує при натисненні на посилання
+*/
