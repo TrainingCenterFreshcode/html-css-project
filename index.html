@@ -7,10 +7,89 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="card-wrapper">
-      <img class="image" src="./pictures/dog-puppy-on-garden-royalty-free-image-1586966191.jpg" alt="Cat" />
-    </div>
+    <table>
+      <caption>Taxes</caption>
+
+      <thead>
+
+        <tr>
+          <th></th>
+          <th>Week day</th>
+          <th>Taxes</th>
+        </tr>
+
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Monday</td>
+          <td class="text-center">10$</td>
+        </tr>
+
+        <tr>
+          <td>2.</td>
+          <td>Tuesday</td>
+          <td class="text-center">15$</td>
+        </tr>
+
+        <tr>
+          <td>3.</td>
+          <td>Wednesday</td>
+          <td class="text-center">9$</td>
+        </tr>
+
+        <tr>
+          <td>4.</td>
+          <td>Thursday</td>
+          <td class="text-center">10$</td>
+        </tr>
+
+        <tr>
+          <td>5.</td>
+          <td>Friday</td>
+          <td class="text-center">12$</td>
+          <td>Free for the employees</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">6-7.</td>
+          <td rowspan="2">Weekend</td>
+          <td class="text-center">25$ for employees</td>
+        </tr>
+        <tr>
+          <td class="text-center">35$ for all others</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th colspan="2">Total:</th>
+          <td colspan="2" class="text-center">$$$</td>
+        </tr>
+      </tfoot>
+
+    </table>
   </body>
 </html>
 
-<!-- Елементи бувають блочні (block) та строчні (inline) -->
+<!-- 
+    <table> - тег з якого розпочинається таблиця
+
+    <thead> - назви стовпців таблиці
+    <tbody> - тіло таблиці (семантичний тег)
+    <tfoot> - нижній колонтитул таблиці (семантичний тег)
+
+    <caption> - визначає назву таблиці (текст автоматично центрується у таблиці)
+
+    <tr> - створити рядок таблиці
+
+    Всередині рядка таблиці ми створюємо комірки.
+    Комірки бувають 2-ох типів.
+    <th> - комірка-заголовок (текст виділяється жирним шрифтом + центрується).
+    <td> - звичайна комірка таблиці
+    
+      
+    rowspan - атрибут комірки, який вказує, на скільки рядків має розтягуватися комірка у вертикальному напрямку
+    colspan - атрибут комірки, який вказує, на скільки рядків має розтягуватися комірка у горизонтальному напрямку
+-->
