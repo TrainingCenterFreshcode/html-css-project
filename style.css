@@ -1,93 +1,28 @@
-.link-list li {
-  display: inline-block;
-  margin-top: 30px;
+div {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
 }
 
 /* 
-inline-block:
 
-- розташовується послідовно, в рядку (як в inline елементах)
-- розмір визначається по контенту (як в inline елементах)
-- елемент завжди прямокутний (як в block елементах)
-- працюють властивості width / height (як в block елементах)
-*/
+Завдання.
 
-.page-link {
-  text-decoration: none;
-  background-color: lightblue;
-  padding: 10px;
-  color: rgb(161, 20, 130);
-}
+Зробити такий колір тла (background-color) для квадратиків
 
-.page-link:hover {
-  background-color: dodgerblue;
-  color: bisque;
-}
+1 - червоний  
+2 - зелений   
+3 - синій
+4 - зелений
+5 - червоний
+6 - синій
+7 - червоний
+8 - зелений
 
-.page-link:focus {
-  border: 5px solid green;
-}
+Червоний - 1, 5, 7
+Зелений - 2, 4, 8
+Синій - 3, 6 (для кожного 3 квадратика)
 
-.page-link:active {
-  background-color: orange;
-  color: black;
-}
+Правило: не додавайте жодних класів
 
-input:focus {
-  background-color: aquamarine;
-}
-
-/* li:first-child {
-  color: blue;
-}
-
-li:last-child {
-  color: green;
-} */
-
-/* li:nth-child(odd) {
-  color: orange;
-  background-color: bisque;
-}
-
-li:nth-child(even) {
-  color: orangered;
-  background-color: bisque;
-} */
-
-/* li:nth-child(5) {
-  color: orange;
-  background-color: bisque;
-} */
-
-/* 
-  Задача: обрати всі елементи після третього (тобто, починаючи з 4 елемента) */
-/* li:nth-child(n+4) {
-  color: orange;
-  background-color: bisque;
-} */
-
-/* Задача: Обрати тільки перші 5 елементів */
-/* li:nth-child(-n+5) {
-  color: orange;
-  background-color: bisque;
-} */
-
-/* Задача: вибрати кожен 3 елемент, починаючи з 1 */
-/* An + B */
-/* 
-A - які саме числа нас будуть цікавити; 
-B - елемент, з якого ми починаємо 
-*/
-li:nth-child(3n + 1) {
-  color: orange;
-  background-color: bisque;
-}
-
-/* 
-hover - спрацьовує при наведенні на елемент мишею
-focus - спрацьовує при фокусі на елемент мишею або за допомогою клавіші "ТАБ"
-active - спрацьовує при натисненні на посилання
-first-child - застосовує правила до першого елемента вкладеного в батьківський елемент
-last-child - працює як first-child, тільки шукає останній елемент
 */
