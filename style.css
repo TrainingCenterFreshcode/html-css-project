@@ -37,12 +37,51 @@ input:focus {
   background-color: aquamarine;
 }
 
-li:first-child {
+/* li:first-child {
   color: blue;
 }
 
 li:last-child {
   color: green;
+} */
+
+/* li:nth-child(odd) {
+  color: orange;
+  background-color: bisque;
+}
+
+li:nth-child(even) {
+  color: orangered;
+  background-color: bisque;
+} */
+
+/* li:nth-child(5) {
+  color: orange;
+  background-color: bisque;
+} */
+
+/* 
+  Задача: обрати всі елементи після третього (тобто, починаючи з 4 елемента) */
+/* li:nth-child(n+4) {
+  color: orange;
+  background-color: bisque;
+} */
+
+/* Задача: Обрати тільки перші 5 елементів */
+/* li:nth-child(-n+5) {
+  color: orange;
+  background-color: bisque;
+} */
+
+/* Задача: вибрати кожен 3 елемент, починаючи з 1 */
+/* An + B */
+/* 
+A - які саме числа нас будуть цікавити; 
+B - елемент, з якого ми починаємо 
+*/
+li:nth-child(3n + 1) {
+  color: orange;
+  background-color: bisque;
 }
 
 /* 
