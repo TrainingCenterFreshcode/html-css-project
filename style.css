@@ -4,6 +4,18 @@ div {
   border: 2px solid black;
 }
 
+div:nth-child(odd) {
+  background-color: red;
+}
+
+div:nth-child(even) {
+  background-color: green;
+}
+
+div:nth-child(3n) {
+  background-color: blue;
+}
+
 /* 
 
 Завдання.
@@ -21,7 +33,7 @@ div {
 
 Червоний - 1, 5, 7
 Зелений - 2, 4, 8
-Синій - 3, 6 (для кожного 3 квадратика)
+Синій - 3, 6 (для кожного 3 квадратика, починаючи з 1)
 
 Правило: не додавайте жодних класів
 
