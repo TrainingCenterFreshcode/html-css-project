@@ -1,40 +1,6 @@
-div {
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
+.paragraph {
+  /* відносне позиціонування */
+  position: relative;
+  left: 50px;
+  top: 50px;
 }
-
-div:nth-child(odd) {
-  background-color: red;
-}
-
-div:nth-child(even) {
-  background-color: green;
-}
-
-div:nth-child(3n) {
-  background-color: blue;
-}
-
-/* 
-
-Завдання.
-
-Зробити такий колір тла (background-color) для квадратиків
-
-1 - червоний  
-2 - зелений   
-3 - синій
-4 - зелений
-5 - червоний
-6 - синій
-7 - червоний
-8 - зелений
-
-Червоний - 1, 5, 7
-Зелений - 2, 4, 8
-Синій - 3, 6 (для кожного 3 квадратика, починаючи з 1)
-
-Правило: не додавайте жодних класів
-
-*/
