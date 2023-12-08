@@ -1,8 +1,9 @@
 p {
   color: blue;
+  cursor: crosshair;
 }
 
-p::first-line {
-  background-color: yellow;
-  color: red;
+p::selection {
+  color: pink;
+  background-color: blueviolet;
 }
