@@ -1,36 +1,29 @@
-p {
-  position: relative;
-  color: blue;
-  font-size: 20px;
-  border: 1px solid black;
+/* 
+
+"*" - множинний селектор
+
+*/
+
+div * {
+  /* стилі для всіх дочірніх елементів div */
+  /* тут можуть бути якісь стилі */
 }
 
-p::before {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  color: red;
-  background-color: pink;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  border-radius: 50%;
-  content: '♥';
-  display: inline-block;
-  opacity: 0.5;
+/* 
+
+"*" - універсальний селектор
+
+*/
+
+* {
+  /* ці стилі будуть застосовані до всіх елементів на сторінці */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p::after {
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
-  color: red;
-  background-color: pink;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  border-radius: 50%;
-  content: '♥';
-  display: inline-block;
-  opacity: 0.5;
-}
+
+/* Проблема: різні базові стилі, які можуть видавати браузери */
+/* 1 рішення - універсальний селектор з базовими правила */
+/* 2 рішення - reset.css (максимально обнулює всі браузерні стилі) */
+/* 3 рішення - normalize.css (приводить всі стилі для всіх браузерів до чогось спільного) */
