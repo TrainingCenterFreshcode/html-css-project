@@ -1,15 +1,27 @@
 form {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 260px;
   margin: 0 auto;
 }
 
-label, input {
-  display: block;
+.required::before {
+  content: '*';
+  color: red;
 }
 
-input, button {
-  padding: 10px 20px;
-  font-size: 16px;
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+input {
+  margin: 0.4rem;
 }

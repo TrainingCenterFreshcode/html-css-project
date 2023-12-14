@@ -13,14 +13,14 @@
         <input type="text" name="username" placeholder="Вадим" autofocus>
       </label>
 
-      <label>
+      <label class="required">
         Електронна пошта
-        <input type="text" name="email" placeholder="example@email.com" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+        <input required type="text" name="email" placeholder="example@email.com" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
       </label>
 
       <label>
         Пароль:
-        <input type="text" name="password" placeholder="qwerty1234" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g">
+        <input type="text" name="password" placeholder="qwerty1234" >
       </label>
 
       <label>
@@ -35,7 +35,55 @@
 
       <label>
         Дата народження:
-        <input type="text" name="birthdate" placeholder="14.09.2005">
+        <input type="date" name="birthdate" placeholder="14.09.2005">
+      </label>
+
+      <fieldset>
+        <legend>Choose your gender</legend>
+
+        <label>
+          <input type="radio" checked value="Male" name="gender">
+          Male
+        </label>
+  
+        <label>
+          <input type="radio" value="Female" name="gender">
+          Female
+        </label>
+  
+        <label>
+          <input type="radio" value="Nonbinary" name="gender">
+          Nonbinary
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose your avatar</legend>
+        <input name="avatar" type="file" multiple>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose your city</legend>
+        <select name="city">
+          <option value="Kyiv">Київ</option>
+          <option value="Kharkiv">Харків</option>
+          <option value="Lviv">Львів</option>
+          
+          <optgroup label="Дніпропетровська область">
+            <option value="Dnipro">Дніпро</option>
+            <option value="Kryvyi-Rig">Кривий Ріг</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <label class="required">
+        <input required type="checkbox" name="is-agree" checked>
+        Чи погоджуєтесь Ви із нашою політикою?
+      </label>
+
+      <label>
+        <input type="checkbox" name="is-subscribed" checked>
+        Чи хочете Ви отримувати від нас новини? (спам)
       </label>
 
       <button type="submit">Зареєструватися</button>
