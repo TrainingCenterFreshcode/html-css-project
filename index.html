@@ -7,19 +7,39 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form class="form" action="" method="GET">
-      <h2>Sign In</h2>
+    <form>
+      <label>
+        Ім'я
+        <input type="text" name="username" placeholder="Вадим" autofocus>
+      </label>
 
-      <!-- 1 спосіб: id -->
-      <label for="email-form">Enter your email</label>
-      <input type="text" placeholder="example@mail.com" autofocus id="email-form" name="email" />
+      <label>
+        Електронна пошта
+        <input type="email" name="email" placeholder="example@email.com">
+      </label>
 
-      <!-- 2 спосіб: вкладення input в label -->
-      <label for="password-form">Enter your password</label>
-      <input type="password" placeholder="qwerty123" id="password-form" name="password" />
-      
-      <button type="submit">Sign In</button>
-      <button type="reset">Reset</button>
+      <label>
+        Пароль:
+        <input type="password" name="password" placeholder="qwerty1234">
+      </label>
+
+      <label>
+        Телефон:
+        <input type="text" name="phone" placeholder="0994875717">
+      </label>
+
+      <label>
+        Адреса:
+        <input type="text" name="address" placeholder="вул. Хрещатик, буд...">
+      </label>
+
+      <label>
+        Дата народження:
+        <input type="text" name="birthdate" placeholder="14.09.2005">
+      </label>
+
+      <button type="submit">Зареєструватися</button>
+      <button type="reset">Очистити</button>
     </form>
   </body>
 </html>
