@@ -7,104 +7,99 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <h1>Форма зворотнього зв'язку</h1>
+
     <form>
-      <label>
-        Ім'я
-        <input type="text" name="username" placeholder="Вадим" autofocus>
-      </label>
-
-      <label class="required">
-        Електронна пошта
-        <input required type="text" name="email" placeholder="example@email.com" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
-      </label>
-
-      <label>
-        Пароль:
-        <input type="text" name="password" placeholder="qwerty1234" >
-      </label>
-
-      <label>
-        Телефон:
-        <input type="text" name="phone" placeholder="0994875717">
-      </label>
-
-      <label>
-        Адреса:
-        <input type="text" name="address" placeholder="вул. Хрещатик, буд...">
-      </label>
-
-      <label>
-        Дата народження:
-        <input type="date" name="birthdate" placeholder="14.09.2005">
-      </label>
 
       <fieldset>
-        <legend>Choose your gender</legend>
+        <legend>Особисті дані</legend>
 
         <label>
-          <input type="radio" checked value="Male" name="gender">
-          Male
+          Ім'я
+          <input type="text" name="name" required />
         </label>
-  
+
         <label>
-          <input type="radio" value="Female" name="gender">
-          Female
+          Електронна пошта
+          <input type="email" name="email" required />
         </label>
-  
+
         <label>
-          <input type="radio" value="Nonbinary" name="gender">
-          Nonbinary
+          Дата народження
+          <input type="date" name="dob" required />
         </label>
       </fieldset>
 
       <fieldset>
-        <legend>Choose your avatar</legend>
-        <input name="avatar" type="file" multiple>
+        <legend>Стать</legend>
+
+        <label>
+          <input type="radio" name="gender" value="male" />
+          Чоловік
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="female" />
+          Жінка
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="nonbinary" />
+          Небінарна персона
+        </label>
       </fieldset>
 
       <fieldset>
-        <legend>Choose your city</legend>
-        <input type="text" name="city" list="city-list" />
+        <legend>Додаткові налаштування</legend>
 
-        <datalist id="city-list">
-          <option value="Kyiv"></option>
-          <option value="Kharkiv"></option>
-          <option value="Lviv"></option>
-          <option value="Dnipro"></option>
-          <option value="Kryvyi-Rig"></option>
-        </datalist>
+        <label>
+          <input type="checkbox" name="is-subscribe" value="true" />
+          Підписатися на розсилку
+        </label>
       </fieldset>
 
-      <textarea placeholder="Опишіть себе"></textarea>
+      <fieldset class="center">
+        <legend>Оберіть категорію своїх інтересів</legend>
 
-      <label class="required">
-        <input required type="checkbox" name="is-agree" checked>
-        Чи погоджуєтесь Ви із нашою політикою?
-      </label>
+        <select name="category">
+          <optgroup label="Технології">
+            <option value="programming">Програмування</option>
+            <option value="networks">Мережі</option>
+          </optgroup>
 
-      <label>
-        <input type="checkbox" name="is-subscribed" checked>
-        Чи хочете Ви отримувати від нас новини? (спам)
-      </label>
+          <optgroup label="Музика">
+            <option value="rock">Рок</option>
+            <option value="pop">Поп</option>
+          </optgroup>
+        </select>
+      </fieldset>
 
-      <button type="submit">Зареєструватися</button>
-      <button type="reset">Очистити</button>
+      <fieldset>
+        <legend>Як ви дізналися про нас?</legend>
+
+        <label>
+          <input type="radio" name="option" value="search-systems" />
+          Пошукові системи
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="social-networks" />
+          Соціальні мережі
+        </label>
+
+        <label>
+          <input type="radio" name="option" value="friends" />
+          Порада друзів/знайомих
+        </label>
+      </fieldset>
+
+      <fieldset class="center">
+        <legend>Опишіть свої враження / скарги / пропозиції</legend>
+
+        <textarea name="comment"></textarea>
+      </fieldset>
+
+      <button type="submit">Надіслати форму</button>
     </form>
   </body>
 </html>
-
-<!-- 
-
-  Регулярний вираз - це шаблон або правило для пошуку та відповідності текстовим рядкам
-
-  /Міс/
-  
-  Міський     <<--- входження
-  Приміський  <<--- входження
-  Міст        <<--- входження
-  Розмістити  <<--- входження
-  Панацея
-
-  Ідея: за допомогою регулярок ми можемо шукати входження у тексті
-
--->

@@ -1,32 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+body {
+  font-family: 'Shantell Sans', cursive;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  max-width: 260px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
-.required::before {
-  content: '*';
-  color: red;
-}
-
 fieldset {
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
+  margin-bottom: 20px;
+  /* border: none; */
 }
 
 legend {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
+  font-weight: bold;
   padding: 3px 6px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 8px; /* ! */
 }
 
 input {
-  margin: 0.4rem;
+  margin-left: 10px;
+  margin-right: 10px; /* ! */
+}
+
+select, textarea {
+  width: 90%; /* ! */
+  margin-bottom: 10px;
 }
 
 textarea {
   resize: none;
-  height: 150px;
+  height: 60px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(32, 160, 32);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: rgb(23, 98, 23);
+}
+
+.center { /* клас для центрування select та textarea всередині fieldset */
+  display: flex;
+  justify-content: center;
 }
